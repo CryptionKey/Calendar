@@ -106,7 +106,8 @@ public class MainActivity extends Activity {
 
             @Override
             public void onSwiped(RecyclerView.ViewHolder viewHolder, int swipeDir) {
-                listPokemon.remove(viewHolder.getAdapterPosition());
+                //listPokemon.remove(viewHolder.getAdapterPosition());
+                calendarList.remove(viewHolder.getAdapterPosition());
                 mAdapter.notifyItemRemoved(viewHolder.getAdapterPosition());
             }
         };

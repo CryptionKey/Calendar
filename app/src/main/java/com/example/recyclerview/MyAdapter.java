@@ -15,13 +15,13 @@ import com.example.recyclerview.Model.Calendar;
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     private List<Calendar> listData;
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    class ViewHolder extends RecyclerView.ViewHolder {
         // each data item is just a string in this case
-        public TextView txtHeader;
-        public TextView txtFooter;
-        public View layout;
+        TextView txtHeader;
+        TextView txtFooter;
+        View layout;
 
-        public ViewHolder(View v) {
+        ViewHolder(View v) {
             super(v);
             layout = v;
             txtHeader = (TextView) v.findViewById(R.id.firstLine);
@@ -34,13 +34,13 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         notifyItemInserted(position);
     }
 
-    public void remove(int position) {
+    private void remove(int position) {
         listData.remove(position);
         notifyItemRemoved(position);
     }
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    public MyAdapter(List<Calendar> myDataset) {
+    MyAdapter(List<Calendar> myDataset) {
         listData = myDataset;
     }
 
@@ -63,15 +63,24 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
         Calendar selectedCalendar = listData.get(position);
-        final String name = selectedCalendar.getDate();
-        holder.txtHeader.setText(name);
+        final String category = selectedCalendar.getCategory();
+        final String title = selectedCalendar.getTitle();
+        final String hebrew = selectedCalendar.getHebrew();
+        final String memo = selectedCalendar.getMemo();
+        final String date = selectedCalendar.getDate();
+        holder.txtHeader.setText(category);
+        holder.txtHeader.setText(title);
+        holder.txtHeader.setText(hebrew);
+        holder.txtHeader.setText(memo);
+        holder.txtHeader.setText(date);
+
         holder.txtHeader.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
                 remove(position);
             }
         });
-        holder.txtFooter.setText("Footer: " + name);
+        holder.txtFooter.setText("Footer: " + category + "\n" + title + "\n" + hebrew + "\n" + memo + "\n" + date);
     }
 
     // Return the size of your dataset (invoked by the layout manager)
