@@ -1,11 +1,14 @@
 package com.example.recyclerview;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 import android.util.Log;
+import android.view.View;
+import android.widget.TextView;
 
 import com.example.recyclerview.Model.Calendar;
 import com.example.recyclerview.Calendar.RestCalendarAPI;
@@ -85,6 +88,20 @@ public class MainActivity extends Activity {
         //});
 
     }
+
+    /***public void randomMe(View view){
+        //Create an Intent to start the second activity
+        Intent randomIntent = new Intent(this, SecondActivity.class);
+
+        //Get the text view that shows the count
+        TextView showCountTextView = findViewById(R.id.textView);
+
+        //Get the value of the text view
+        String countString = showCountTextView.getText().toString();
+
+        //Start the new activity
+        startActivity(randomIntent);
+    }***/
 
     private void showList(List<Calendar> list) {
         recyclerView.setHasFixedSize(true);

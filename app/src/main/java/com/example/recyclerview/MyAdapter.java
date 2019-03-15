@@ -26,6 +26,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
             layout = v;
             txtHeader = (TextView) v.findViewById(R.id.firstLine);
             txtFooter = (TextView) v.findViewById(R.id.secondLine);
+           // txtFooter = (TextView) v.findViewById(R.id.troisiemeLine);
+           // txtFooter = (TextView) v.findViewById(R.id.quatriemeLine);
         }
     }
 
@@ -68,19 +70,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         final String hebrew = selectedCalendar.getHebrew();
         final String memo = selectedCalendar.getMemo();
         final String date = selectedCalendar.getDate();
-        holder.txtHeader.setText(category);
-        holder.txtHeader.setText(title);
-        holder.txtHeader.setText(hebrew);
-        holder.txtHeader.setText(memo);
-        holder.txtHeader.setText(date);
 
-        holder.txtHeader.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                remove(position);
-            }
-        });
-        holder.txtFooter.setText("Footer: " + category + "\n" + title + "\n" + hebrew + "\n" + memo + "\n" + date);
+        holder.txtHeader.setText(category);
+        holder.txtFooter.setText(hebrew + "\n" + title + "\n" + date + "\n" + memo);
     }
 
     // Return the size of your dataset (invoked by the layout manager)
