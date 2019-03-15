@@ -1,15 +1,15 @@
-package com.example.recyclerview;
+package com.example.recyclerview.Controler;
 
 import java.util.List;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.recyclerview.Model.Calendar;
+import com.example.recyclerview.R;
 
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
@@ -21,11 +21,11 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         TextView txtFooter;
         View layout;
 
-        ViewHolder(View v) {
+     public ViewHolder(View v) {
             super(v);
             layout = v;
-            txtHeader =  v.findViewById(R.id.firstLine);
-            txtFooter =  v.findViewById(R.id.secondLine);
+            txtHeader = (TextView) v.findViewById(R.id.firstLine);
+            txtFooter = (TextView) v.findViewById(R.id.secondLine);
         }
     }
 
@@ -40,7 +40,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     }
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    MyAdapter(List<Calendar> myDataset) {
+    public MyAdapter(List<Calendar> myDataset) {
         listData = myDataset;
     }
 

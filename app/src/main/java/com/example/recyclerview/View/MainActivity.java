@@ -1,4 +1,4 @@
-package com.example.recyclerview;
+package com.example.recyclerview.View;
 
 
 import android.annotation.SuppressLint;
@@ -6,14 +6,12 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.recyclerview.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String TOTAL_COUNT = "total_count";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,14 +19,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void toastMe(View view){
-        // Toast myToast = Toast.makeText(this, message, duration);
-        Toast myToast = Toast.makeText(this, "Hello Toast",Toast.LENGTH_SHORT);
-        myToast.show();
+    public void calendrier(View view){
+
+        //Create an Intent to start the second activity
+        Intent randomIntent = new Intent(this, SecondActivity.class);
+
+        //Start the new activity
+        startActivity(randomIntent);
     }
 
     @SuppressLint("SetTextI18n")
-    public void countMe(View view){
+    public void chabbat(View view){
         //Get the Text view
         /***  TextView showCountTextView = findViewById(R.id.textView);
 
@@ -47,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void createur(View view){
-
         Toast mon_nom = Toast.makeText(this, "Daniel Elgrably",Toast.LENGTH_SHORT);
         mon_nom.show();
     }

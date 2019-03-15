@@ -11,7 +11,4 @@ public class RestCalendarResponse {
     public String getDate() { return date; }
     public List<Calendar> getItems() { return items; }
 
-    //Les setters
-    public void setDate(String date) { this.date = date; }
-    public void setItems(List<Calendar> items) { this.items = items; }
 }

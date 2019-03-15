@@ -19,14 +19,6 @@ public class Calendar {
     public String getMemo() { return memo; }
 
 
-    //Les setters
-    public void setCategory(String category) { this.category = category; }
-    public void setTitle(String title) { this.title = title; }
-    public void setDate(String date) { this.date = date; }
-    public void setHebrew(String hebrew) { this.hebrew = hebrew; }
-    public void setMemo(String memo) { this.memo = memo; }
-    public void setLink(String link) { this.link = link; }
-
 }
 
 

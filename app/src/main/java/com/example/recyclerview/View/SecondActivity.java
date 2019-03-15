@@ -1,4 +1,4 @@
-package com.example.recyclerview;
+package com.example.recyclerview.View;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -7,9 +7,12 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 import android.util.Log;
 
+import com.example.recyclerview.Controler.Cont;
 import com.example.recyclerview.Model.Calendar;
-import com.example.recyclerview.Calendar.RestCalendarAPI;
+import com.example.recyclerview.Controler.RestCalendarAPI;
 import com.example.recyclerview.Model.RestCalendarResponse;
+import com.example.recyclerview.Controler.MyAdapter;
+import com.example.recyclerview.R;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -26,49 +29,21 @@ public class SecondActivity extends Activity {
     private RecyclerView recyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
-
+    private Cont controlller;
     private List<Calendar> calendarList;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
-        recyclerView = (RecyclerView) findViewById(R.id.calendar_recycler_view);
+        recyclerView = findViewById(R.id.calendar_recycler_view);
 
-
-        //Créer objet Gson
-        Gson gson = new GsonBuilder()
-                .setLenient()
-                .create();
-
-        //Créer objet retrofit
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://www.hebcal.com/")
-                .addConverterFactory(GsonConverterFactory.create(gson))
-                .build();
-
-        RestCalendarAPI restCalendarAPI = retrofit.create(RestCalendarAPI.class);
-        Call<RestCalendarResponse> call = restCalendarAPI.getListCalendar();
-        call.enqueue(new Callback<RestCalendarResponse>() {
-            @Override
-            public void onResponse(Call<RestCalendarResponse> call, Response<RestCalendarResponse> response) {
-                RestCalendarResponse restCalendarResponse = response.body();
-                calendarList = restCalendarResponse.getItems();
-                showList(calendarList);
-            }
-
-            @Override
-            public void onFailure(Call<RestCalendarResponse> call, Throwable t) {
-                Log.d("ERROR", "Api Error");
-            }
-        });
-
-
-
+        controlller = new Cont(this);
+        controlller.onCreate();
     }
 
-
-    private void showList(List<Calendar> list) {
+    public void showList(List<Calendar> list) {
         recyclerView.setHasFixedSize(true);
         // use a linear layout manager
         layoutManager = new LinearLayoutManager(this);

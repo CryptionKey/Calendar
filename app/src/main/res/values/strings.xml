@@ -3,8 +3,8 @@
     <string name="description">Description</string>
     <string name="example_application">Example application</string>
     <string name="todo">todo</string>
-    <string name="bienvenue_dans_votre_calendrier">Bienvenue dans votre calendrier</string>
-    <string name="prochains_chabbats">Prochains chabbats</string>
-    <string name="calendrier_et_horaires">Calendrier et hotaires</string>
+    <string name="bienvenue_dans_votre_calendrier">BIENVENUE DANS VOTRE CALENDRIER</string>
+    <string name="prochains_chabbats">Montées chabbat</string>
+    <string name="calendrier_et_horaires">Calendrier et horaires</string>
     <string name="cr_ateur">createur</string>
 </resources>
