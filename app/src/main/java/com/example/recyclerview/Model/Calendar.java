@@ -9,14 +9,15 @@ public class Calendar {
     private String hebrew;
     private String link;
     private String memo;
+    private Montee montee;
 
     //Les getters
     public String getCategory() { return category; }
     public String getTitle() { return title; }
     public String getDate() { return date; }
     public String getHebrew() { return hebrew; }
-    public String getLink() { return link; }
     public String getMemo() { return memo; }
+    public Montee getMontee() {return montee;}
 
 
 }

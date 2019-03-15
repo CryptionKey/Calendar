@@ -17,16 +17,23 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
     class ViewHolder extends RecyclerView.ViewHolder {
         // each data item is just a string in this case
-        TextView txtHeader;
-        TextView txtFooter;
+        TextView line_1;
+        TextView line_2;
+        TextView line_3;
+        TextView line_4;
+        TextView line_5;
+
         View layout;
 
      public ViewHolder(View v) {
             super(v);
             layout = v;
-            txtHeader = (TextView) v.findViewById(R.id.firstLine);
-            txtFooter = (TextView) v.findViewById(R.id.secondLine);
-        }
+            line_1 = (TextView) v.findViewById(R.id.firstLine);
+            line_2 = (TextView) v.findViewById(R.id.secondLine);
+            line_3 = (TextView) v.findViewById(R.id.thirdLine);
+            line_4 = (TextView) v.findViewById(R.id.fourthLine);
+            line_5 = (TextView) v.findViewById(R.id.fifthLine);
+     }
     }
 
     public void add(int position, Calendar item) {
@@ -69,8 +76,11 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         final String memo = selectedCalendar.getMemo();
         final String date = selectedCalendar.getDate();
 
-        holder.txtHeader.setText(category);
-        holder.txtFooter.setText(hebrew + "\n" + title + "\n" + date + "\n" + memo);
+        holder.line_1.setText(category);
+        holder.line_2.setText(hebrew);
+        holder.line_3.setText(title);
+        holder.line_4.setText(date);
+        holder.line_5.setText(memo);
     }
 
     // Return the size of your dataset (invoked by the layout manager)
