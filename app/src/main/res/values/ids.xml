@@ -3,4 +3,10 @@
     <item name="fourthLine" type="id" />
     <item name="thirdLine" type="id" />
     <item name="fifthLine" type="id" />
+    <item name="montee_recycler_view" type="id" />
+    <item name="firstLine_bis" type="id" />
+    <item name="secondLine_bis" type="id" />
+    <item name="thirdLine_bis" type="id" />
+    <item name="fourthLine_bis" type="id" />
+    <item name="fifthLine_bis" type="id" />
 </resources>

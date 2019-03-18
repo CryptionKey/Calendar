@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="125dp">
+
+    <ImageView
+        android:id="@drawable/vignette_bis"
+        android:layout_width="69dp"
+        android:layout_height="120dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/vignette_bis"
+        tools:srcCompat="@tools:sample/avatars[0]" />
+
+
+    <TextView
+        android:id="@+id/firstLine_bis"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toEndOf="@drawable/vignette"
+        android:gravity="center_vertical"
+        android:text="@string/example_application"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        tools:ignore="SmallSp" />
+
+
+    <TextView
+        android:id="@+id/secondLine_bis"
+        android:layout_width="302dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/firstLine_bis"
+        android:layout_marginStart="-335dp"
+        android:layout_marginTop="-14dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="165dp"
+        android:layout_toEndOf="@+id/firstLine_bis"
+        android:ellipsize="marquee"
+        android:text="@string/description"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/thirdLine_bis"
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstLine_bis"
+        android:layout_marginStart="-335dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="165dp"
+        android:layout_toEndOf="@+id/firstLine_bis"
+        android:ellipsize="marquee"
+        android:text="@string/description"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/fourthLine_bis"
+        android:layout_width="302dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/firstLine_bis"
+        android:layout_marginStart="-335dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="165dp"
+        android:layout_toEndOf="@+id/firstLine_bis"
+        android:ellipsize="marquee"
+        android:text="@string/description"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/fifthLine_bis"
+        android:layout_width="302dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/firstLine_bis"
+        android:layout_marginStart="-335dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="165dp"
+        android:layout_toEndOf="@+id/firstLine_bis"
+        android:ellipsize="marquee"
+        android:text="@string/description"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>
