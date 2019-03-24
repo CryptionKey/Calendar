@@ -1,4 +1,4 @@
-package com.example.recyclerview.Controler;
+package com.example.calendar.Controler;
 
 import java.util.List;
 
@@ -8,8 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.recyclerview.Model.Calendar;
-import com.example.recyclerview.R;
+import com.example.calendar.Model.Calendar;
+import com.example.calendar.R;
 
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {

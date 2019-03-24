@@ -1,15 +1,14 @@
-package com.example.recyclerview.View;
+package com.example.calendar.View;
 
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.recyclerview.R;
+import com.example.calendar.R;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.example.recyclerview;
+package com.example.calendar;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

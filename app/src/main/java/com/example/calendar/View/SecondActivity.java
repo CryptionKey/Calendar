@@ -1,28 +1,17 @@
-package com.example.recyclerview.View;
+package com.example.calendar.View;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
-import android.util.Log;
 
-import com.example.recyclerview.Controler.Cont;
-import com.example.recyclerview.Model.Calendar;
-import com.example.recyclerview.Controler.RestCalendarAPI;
-import com.example.recyclerview.Model.RestCalendarResponse;
-import com.example.recyclerview.Controler.MyAdapter;
-import com.example.recyclerview.R;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
+import com.example.calendar.Controler.Cont;
+import com.example.calendar.Model.Calendar;
+import com.example.calendar.Controler.MyAdapter;
+import com.example.calendar.R;
 
 import java.util.List;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 
 public class SecondActivity extends Activity {

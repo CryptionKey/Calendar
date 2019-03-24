@@ -1,10 +1,10 @@
-package com.example.recyclerview.Controler;
+package com.example.calendar.Controler;
 
 import android.util.Log;
 
-import com.example.recyclerview.Model.Calendar;
-import com.example.recyclerview.Model.RestCalendarResponse;
-import com.example.recyclerview.View.ThirdActivity;
+import com.example.calendar.Model.Calendar;
+import com.example.calendar.Model.RestCalendarResponse;
+import com.example.calendar.View.SecondActivity;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -16,16 +16,14 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class Cont_bis {
+public class Cont {
 
     private List<Calendar> calendarList;
-    private ThirdActivity view;
+    private SecondActivity view;
 
-    public Cont_bis(ThirdActivity view) {
+    public Cont(SecondActivity view) {
         this.view = view;
     }
-
-
 
     public void onCreate() {
 

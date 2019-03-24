@@ -1,4 +1,4 @@
-package com.example.recyclerview.View;
+package com.example.calendar.View;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -6,11 +6,11 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 
-import com.example.recyclerview.Controler.Cont_bis;
-import com.example.recyclerview.Controler.MyAdapter_bis;
-import com.example.recyclerview.Model.Calendar;
-import com.example.recyclerview.Model.Leyning;
-import com.example.recyclerview.R;
+import com.example.calendar.Controler.Cont_bis;
+import com.example.calendar.Controler.MyAdapter_bis;
+import com.example.calendar.Model.Calendar;
+import com.example.calendar.Model.Leyning;
+import com.example.calendar.R;
 
 import java.util.List;
 

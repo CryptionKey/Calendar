@@ -1,4 +1,4 @@
-package com.example.recyclerview.Model;
+package com.example.calendar.Model;
 
 import com.google.gson.annotations.SerializedName;
 

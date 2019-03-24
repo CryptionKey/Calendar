@@ -1,6 +1,6 @@
-package com.example.recyclerview.Controler;
+package com.example.calendar.Controler;
 
-import com.example.recyclerview.Model.RestCalendarResponse;
+import com.example.calendar.Model.RestCalendarResponse;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

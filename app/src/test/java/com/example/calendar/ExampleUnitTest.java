@@ -1,4 +1,4 @@
-package com.example.recyclerview;
+package com.example.calendar;
 
 import org.junit.Test;
 
