@@ -6,6 +6,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.example.calendar.Controler.Cont;
 import com.example.calendar.Model.Calendar;
 import com.example.calendar.Controler.MyAdapter;
@@ -31,6 +32,14 @@ public class SecondActivity extends Activity {
         controlller = new Cont(this);
         controlller.onCreate();
     }
+
+
+    @Override
+    public void onBackPressed(){
+        super.onBackPressed();
+        Animatoo.animateSwipeRight(this);
+    }
+
 
     public void showList(List<Calendar> list) {
         recyclerView.setHasFixedSize(true);

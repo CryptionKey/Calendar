@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.example.calendar.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -26,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
 
         //Start the new activity
         startActivity(randomIntent);
+
+        Animatoo.animateDiagonal(this);
     }
 
 
@@ -36,11 +39,15 @@ public class MainActivity extends AppCompatActivity {
 
         //Start the new activity
         startActivity(randomIntent);
+
+        Animatoo.animateDiagonal(this);
     }
 
 
     public void createur(View view){
         Toast mon_nom = Toast.makeText(this, "Daniel Elgrably",Toast.LENGTH_SHORT);
         mon_nom.show();
+
+        Animatoo.animateSpin(this);
     }
 }
