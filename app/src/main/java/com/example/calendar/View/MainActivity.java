@@ -19,14 +19,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void calendrier(View view){
 
+    public void calendrier(View view){
         //Create an Intent to start the second activity
         Intent randomIntent = new Intent(this, SecondActivity.class);
 
         //Start the new activity
         startActivity(randomIntent);
     }
+
 
     @SuppressLint("SetTextI18n")
     public void chabbat(View view){
