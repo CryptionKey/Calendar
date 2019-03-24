@@ -6,10 +6,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.recyclerview.Model.Calendar;
-import com.example.recyclerview.Model.Montee;
+import com.example.recyclerview.Model.Leyning;
 import com.example.recyclerview.R;
 
 
@@ -23,6 +24,12 @@ public class MyAdapter_bis extends RecyclerView.Adapter<MyAdapter_bis.ViewHolder
         TextView line_3;
         TextView line_4;
         TextView line_5;
+        TextView line_6;
+        TextView line_7;
+        TextView line_8;
+        TextView line_9;
+        TextView line_10;
+        ImageView image;
 
         View layout;
 
@@ -34,6 +41,12 @@ public class MyAdapter_bis extends RecyclerView.Adapter<MyAdapter_bis.ViewHolder
             line_3 = v.findViewById(R.id.thirdLine_bis);
             line_4 = v.findViewById(R.id.fourthLine_bis);
             line_5 = v.findViewById(R.id.fifthLine_bis);
+            line_6 = v.findViewById(R.id.sixthLine_bis);
+            line_7 = v.findViewById(R.id.seventhLine_bis);
+            line_8 = v.findViewById(R.id.eightLine_bis);
+            line_9 = v.findViewById(R.id.ninthLine_bis);
+            line_10 = v.findViewById(R.id.tenthLine_bis);
+            image = v.findViewById(R.id.vignette_bis);
         }
     }
 
@@ -72,24 +85,33 @@ public class MyAdapter_bis extends RecyclerView.Adapter<MyAdapter_bis.ViewHolder
         // - replace the contents of the view with that element
 
         Calendar selectedCalendar = listData.get(position);
-        Montee selectedMontee = selectedCalendar.getMontee();
-        if (selectedMontee != null) {
-            final String torah = selectedMontee.getTorah();
-            final String un = selectedMontee.getUn();
-            final String deux = selectedMontee.getDeux();
-            final String trois = selectedMontee.getTrois();
-            final String quatre = selectedMontee.getQuatre();
-            final String cinq = selectedMontee.getCinq();
-            final String six = selectedMontee.getSix();
-            final String sept = selectedMontee.getSept();
-            final String maftir = selectedMontee.getMaftir();
-            final String haftara = selectedMontee.getHaftara();
+        Leyning selectedLeyning = selectedCalendar.getLeyning();
+        if (selectedLeyning!= null) {
+            final String torah = selectedLeyning.getTorah();
+            final String un = selectedLeyning.getUn();
+            final String deux = selectedLeyning.getDeux();
+            final String trois = selectedLeyning.getTrois();
+            final String quatre = selectedLeyning.getQuatre();
+            final String cinq = selectedLeyning.getCinq();
+            final String six = selectedLeyning.getSix();
+            final String sept = selectedLeyning.getSept();
+            final String maftir = selectedLeyning.getMaftir();
+            final String haftarah = selectedLeyning.getHaftarah();
 
-            holder.line_1.setText("\tLecture complète : "+torah);
-            holder.line_2.setText("1er montée : "+un);
-            holder.line_3.setText("2ème montée : "+deux);
-            holder.line_4.setText("3ème montée : "+trois);
-            holder.line_5.setText("4ème montée : "+quatre);
+            holder.line_1.setText(String.format("\tLecture complète : %s", torah));
+            holder.line_2.setText(String.format("1er montée : %s", un));
+            holder.line_3.setText(String.format("2ème montée : %s", deux));
+            holder.line_4.setText(String.format("3ème montée : %s", trois));
+            holder.line_5.setText(String.format("4ème montée : %s", quatre));
+            holder.line_6.setText(String.format("5ème montée : %s", cinq));
+            holder.line_7.setText(String.format("6ème montée : %s",six));
+            holder.line_8.setText(String.format("7ème montée : %s",sept));
+            holder.line_9.setText(String.format("Maftir : %s",maftir));
+            holder.line_10.setText(String.format("Haftara : %s",haftarah));
+        }
+        else
+        {
+            holder.image.setVisibility(View.GONE);
         }
     }
 

@@ -9,4 +9,9 @@
     <item name="thirdLine_bis" type="id" />
     <item name="fourthLine_bis" type="id" />
     <item name="fifthLine_bis" type="id" />
+    <item name="sixthLine_bis" type="id" />
+    <item name="seventhLine_bis" type="id" />
+    <item name="eightLine_bis" type="id" />
+    <item name="ninthLine_bis" type="id" />
+    <item name="tenthLine_bis" type="id" />
 </resources>

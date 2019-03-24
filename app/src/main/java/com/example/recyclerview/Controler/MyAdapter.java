@@ -28,11 +28,11 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
      public ViewHolder(View v) {
             super(v);
             layout = v;
-            line_1 = (TextView) v.findViewById(R.id.firstLine);
-            line_2 = (TextView) v.findViewById(R.id.secondLine);
-            line_3 = (TextView) v.findViewById(R.id.thirdLine);
-            line_4 = (TextView) v.findViewById(R.id.fourthLine);
-            line_5 = (TextView) v.findViewById(R.id.fifthLine);
+            line_1 = v.findViewById(R.id.firstLine);
+            line_2 = v.findViewById(R.id.secondLine);
+            line_3 = v.findViewById(R.id.thirdLine);
+            line_4 = v.findViewById(R.id.fourthLine);
+            line_5 = v.findViewById(R.id.fifthLine);
      }
     }
 

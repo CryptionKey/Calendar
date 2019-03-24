@@ -3,12 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="125dp">
+    android:layout_height="235dp">
+
 
     <ImageView
-        android:id="@drawable/vignette_bis"
-        android:layout_width="69dp"
-        android:layout_height="120dp"
+        android:id="@+id/vignette_bis"
+        android:layout_width="119dp"
+        android:layout_height="172dp"
         android:contentDescription="@string/todo"
         android:src="@drawable/vignette_bis"
         tools:srcCompat="@tools:sample/avatars[0]" />
@@ -17,11 +18,10 @@
     <TextView
         android:id="@+id/firstLine_bis"
         android:layout_width="match_parent"
-        android:layout_height="35dp"
+        android:layout_height="wrap_content"
         android:layout_alignWithParentIfMissing="true"
         android:layout_toEndOf="@drawable/vignette"
         android:gravity="center_vertical"
-        android:text="@string/example_application"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
 
@@ -30,60 +30,126 @@
 
     <TextView
         android:id="@+id/secondLine_bis"
-        android:layout_width="302dp"
-        android:layout_height="46dp"
+        android:layout_width="266dp"
+        android:layout_height="20dp"
         android:layout_below="@+id/firstLine_bis"
-        android:layout_marginStart="-335dp"
-        android:layout_marginTop="-14dp"
+        android:layout_marginStart="-280dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="165dp"
         android:layout_toEndOf="@+id/firstLine_bis"
         android:ellipsize="marquee"
-        android:text="@string/description"
         android:textSize="14sp" />
 
 
     <TextView
         android:id="@+id/thirdLine_bis"
-        android:layout_width="312dp"
+        android:layout_width="264dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/firstLine_bis"
-        android:layout_marginStart="-335dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginStart="-280dp"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="165dp"
         android:layout_toEndOf="@+id/firstLine_bis"
         android:ellipsize="marquee"
-        android:text="@string/description"
         android:textSize="14sp" />
 
 
     <TextView
         android:id="@+id/fourthLine_bis"
-        android:layout_width="302dp"
-        android:layout_height="46dp"
+        android:layout_width="266dp"
+        android:layout_height="20dp"
         android:layout_below="@+id/firstLine_bis"
-        android:layout_marginStart="-335dp"
-        android:layout_marginTop="21dp"
+        android:layout_marginStart="-280dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="165dp"
         android:layout_toEndOf="@+id/firstLine_bis"
         android:ellipsize="marquee"
-        android:text="@string/description"
         android:textSize="14sp" />
 
     <TextView
         android:id="@+id/fifthLine_bis"
-        android:layout_width="302dp"
-        android:layout_height="46dp"
+        android:layout_width="266dp"
+        android:layout_height="20dp"
         android:layout_below="@+id/firstLine_bis"
-        android:layout_marginStart="-335dp"
-        android:layout_marginTop="39dp"
+        android:layout_marginStart="-280dp"
+        android:layout_marginTop="65dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="165dp"
         android:layout_toEndOf="@+id/firstLine_bis"
         android:ellipsize="marquee"
-        android:text="@string/description"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/sixthLine_bis"
+        android:layout_width="266dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/firstLine_bis"
+        android:layout_marginStart="-280dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="165dp"
+        android:layout_toEndOf="@+id/firstLine_bis"
+        android:ellipsize="marquee"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/seventhLine_bis"
+        android:layout_width="266dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/firstLine_bis"
+        android:layout_marginStart="-280dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="165dp"
+        android:layout_toEndOf="@+id/firstLine_bis"
+        android:ellipsize="marquee"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/eightLine_bis"
+        android:layout_width="266dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/firstLine_bis"
+        android:layout_marginStart="-280dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="165dp"
+        android:layout_toEndOf="@+id/firstLine_bis"
+        android:ellipsize="marquee"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/ninthLine_bis"
+        android:layout_width="266dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/firstLine_bis"
+        android:layout_marginStart="-280dp"
+        android:layout_marginTop="145dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="165dp"
+        android:layout_toEndOf="@+id/firstLine_bis"
+        android:ellipsize="marquee"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/tenthLine_bis"
+        android:layout_width="266dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/firstLine_bis"
+        android:layout_marginStart="-280dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="165dp"
+        android:layout_toEndOf="@+id/firstLine_bis"
+        android:ellipsize="marquee"
         android:textSize="14sp" />
 
 

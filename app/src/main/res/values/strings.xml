@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RecyclerView</string>
+    <string name="app_name">Calendar</string>
     <string name="description">Description</string>
     <string name="example_application">Example application</string>
     <string name="todo">todo</string>

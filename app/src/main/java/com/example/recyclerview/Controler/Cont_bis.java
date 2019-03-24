@@ -1,15 +1,9 @@
 package com.example.recyclerview.Controler;
 
-import android.app.Activity;
-import android.os.Bundle;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
 import com.example.recyclerview.Model.Calendar;
-import com.example.recyclerview.Model.Montee;
 import com.example.recyclerview.Model.RestCalendarResponse;
-import com.example.recyclerview.R;
-import com.example.recyclerview.View.SecondActivity;
 import com.example.recyclerview.View.ThirdActivity;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
