@@ -35,9 +35,6 @@ public class MainActivity extends AppCompatActivity {
 
         //Start the new activity
         startActivity(randomIntent);
-
-        //Toast myToast = Toast.makeText(this, "Hello Count",Toast.LENGTH_SHORT);
-        //myToast.show();
     }
 
 
