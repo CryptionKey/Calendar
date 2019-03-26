@@ -41,8 +41,8 @@ Ce projet est le premier que nous réalisons sous Android Studio, il n'y avait d
 
 L'écran qui s'affiche au démarrage est l'écran d'accueil. Au commencement du chabbat ou des fêtes, nous avons l'habitude d'allumer deux bougies, c'est ce qui est représenté par le fond d'écran.</br>
 Outre le titre, trois boutons sont proposés à l'utilsateur.
-- Le premier, "Calendrier et horaires" ouvre une seconde activité affichant les prochains 
-- Le second, "Montées chabbat" ouvre une troisième activité 
+- Le premier, "Calendrier et horaires" ouvre une seconde activité affichant les prochains évènements.
+- Le second, "Montées chabbat" ouvre une troisième activité affichant la répartition des montées pour la lecture de chabat.
 - Le troisième, "Créateur" affiche un toast avec mon nom.
 
 <img src="img_readme/splash.png" alt="splash">
