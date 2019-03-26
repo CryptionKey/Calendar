@@ -18,9 +18,11 @@ Cette application affiche le calendrier des chabbats et fêtes juives en utilisa
 
 ## Prérequis
 
-Installation d'Android Studio
+- Installation d'Android Studio</br>
 Ce projet est le premier que nous réalisons sous Android Studio, il n'y avait donc pas d'autres prérequis.
 
+
+&nbsp;
 
 ## Consignes respectées : 
 
@@ -29,3 +31,35 @@ Ce projet est le premier que nous réalisons sous Android Studio, il n'y avait d
 - Architecture MVC
 - Animation entre deux écrans
 
+
+&nbsp;
+
+## Fonctionnalités: 
+
+### Premier écran 
+
+- Splash affichant une pokeball.
+
+<img src="img_readme/splash.png" alt="splash">
+
+### Ecran Home 
+
+- Affiche la liste des pokémons avec une barre de recherche.
+
+<img src="img_readme/liste_pokemon.png" alt="liste pokemon">   <img src="img_readme/recherche.png" alt="recherche">
+
+### Ecran du détail du pokémon
+
+- Affiche les différentes informations sur le pokémon 
+- Puces type, weaknesses, previous evolution et next evolution sont cliquables 
+- Redirection en fonction de la puce  :
+	- Type, weaknesses : Vers la liste des pokémons du type selectionné 
+	- Evolution : Vers le détail du pokémon selectionné
+
+<img src="img_readme/detail_pokemon.png" alt="détail pokemon"> <img src="img_readme/detail_pokemon_2.png" alt="détail pokemon"> 
+
+### Filtres 
+
+Affichage obtenu avec la selection des types eau et plante
+
+<img src="img_readme/filtre_eau.png" alt="détail pokemon"> <img src="img_readme/filtre_plante.png" alt="détail pokemon"> 
