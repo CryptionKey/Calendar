@@ -38,20 +38,20 @@ Ce projet est le premier que nous réalisons sous Android Studio, il n'y avait d
 ## Architecture du projet:
 
 ### Model
-* Calendar:-------->*Objet contenant les informations récupérées de l'API*
-* Leyning:--------->*Objet dans calendar contenant les montées et lectures*
+* Calendar:-------------->*Objet contenant les informations récupérées de l'API*
+* Leyning:--------------->*Objet dans calendar contenant les montées et lectures*
 * RestCalendarResponse
 
 ### View
-* MainActivity:----->*Pour l'écran d'accueil, avec les fonctions appelées pour les trois boutons*
-* SecondActivity:--->*Affichage du calendrier* 
-* ThirdActivity:---->*Affichage des montées et lectures*
+* MainActivity:---------->*Pour l'écran d'accueil, avec les fonctions appelées pour les trois boutons*
+* SecondActivity:-------->*Affichage du calendrier* 
+* ThirdActivity:--------->*Affichage des montées et lectures*
 
 ### Controler
-* Cont:----------->*Constructeur pour la SecondActivity*
-* Cont_bis:------->*Constructeur pour la ThirdActivity*
-* MyAdapter:------>*Adapteur pour la SecondActivity*
-* MyAdapter_bis:-->*Adapteur pour la ThirdActivity*
+* Cont:------------------>*Constructeur pour la SecondActivity*
+* Cont_bis:-------------->*Constructeur pour la ThirdActivity*
+* MyAdapter:------------->*Adapteur pour la SecondActivity*
+* MyAdapter_bis:--------->*Adapteur pour la ThirdActivity*
 * RestCalendarAPI
 
 &nbsp;
