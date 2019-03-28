@@ -46,7 +46,7 @@ Outre le titre, trois boutons sont proposés à l'utilsateur.
 - Le troisième, "Créateur" affiche un toast avec mon nom.
 
 
-<img src="img_readme/ecran.png" width="100" alt="ecran accueil">
+<img src="img_readme/ecran.png" width="150" alt="ecran accueil">
 
 ### Seconde activité
 
