@@ -43,15 +43,15 @@ Ce projet est le premier que nous réalisons sous Android Studio, il n'y avait d
 * RestCalendarResponse
 
 ### View
-* MainActivity : ---------->*Pour l'écran d'accueil, avec les fonctions appelées pour les trois boutons*
+* MainActivity : ----------->*Pour l'écran d'accueil, avec les fonctions appelées pour les trois boutons*
 * SecondActivity : -------->*Affichage du calendrier* 
-* ThirdActivity : --------->*Affichage des montées et lectures*
+* ThirdActivity : ---------->*Affichage des montées et lectures*
 
 ### Controler
-* Cont : ------------------>*Constructeur pour la SecondActivity*
-* Cont_bis : -------------->*Constructeur pour la ThirdActivity*
+* Cont : -------------------->*Constructeur pour la SecondActivity*
+* Cont_bis : ---------------->*Constructeur pour la ThirdActivity*
 * MyAdapter : ------------->*Adapteur pour la SecondActivity*
-* MyAdapter_bis:--------->*Adapteur pour la ThirdActivity*
+* MyAdapter_bis:----------->*Adapteur pour la ThirdActivity*
 * RestCalendarAPI
 
 &nbsp;
