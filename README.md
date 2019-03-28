@@ -38,7 +38,7 @@ Ce projet est le premier que nous réalisons sous Android Studio, il n'y avait d
 ## Architecture du projet:
 
 ### Model
-* Calendar:        *Objet contenant les informations récupérées de l'API*
+* Calendar:   <dd>     *Objet contenant les informations récupérées de l'API*
 * Leyning:         *Objet dans calendar contenant les montées et lectures*
 * RestCalendarResponse
 
