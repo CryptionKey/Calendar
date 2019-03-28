@@ -109,9 +109,9 @@ public class MyAdapter_bis extends RecyclerView.Adapter<MyAdapter_bis.ViewHolder
             holder.line_9.setText(String.format("Maftir : %s",maftir));
             holder.line_10.setText(String.format("Haftara : %s",haftarah));
         }
-        else
-        {
-            holder.image.setVisibility(View.GONE);
+        else{
+           // holder.image.setVisibility(View.GONE);
+            holder.line_1.setText("Pas de lecture prévue");
         }
     }
 
