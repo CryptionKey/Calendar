@@ -45,6 +45,8 @@ Outre le titre, trois boutons sont proposés à l'utilsateur.
 - Le second, "Montées chabbat" ouvre une troisième activité affichant la répartition des montées pour la lecture de chabat.
 - Le troisième, "Créateur" affiche un toast avec mon nom.
 
+![Screenshot_20190326-134025](https://user-images.githubusercontent.com/45068328/55150091-b99d4680-514b-11e9-80ee-820984b51741.png)
+
 <img src="img_readme/splash.png" alt="ecran accueil">
 
 ### Seconde activité
