@@ -45,17 +45,17 @@ Outre le titre, trois boutons sont proposés à l'utilsateur.
 - Le second, "Montées chabbat" ouvre une troisième activité affichant la répartition des montées pour la lecture de chabat.
 - Le troisième, "Créateur" affiche un toast avec mon nom.
 
-<img src="img_readme/splash.png" alt="splash">
+<img src="img_readme/splash.png" alt="ecran accueil">
 
 ### Seconde activité
 
 - Affiche la liste des prochains évènement avec leur catégorie, leur noms en anglais et en hébreu, ainsi que leur date.
 
-<img src="img_readme/liste_pokemon.png" alt="liste pokemon">   
+<img src="img_readme/liste_pokemon.png" alt="liste évènement">   
 
 ### Troisième activité
 
 - Affiche la liste des montées des lectures hebdomadaires.
 
-<img src="img_readme/detail_pokemon.png" alt="détail pokemon">  
+<img src="img_readme/detail_pokemon.png" alt="liste montées">  
 
