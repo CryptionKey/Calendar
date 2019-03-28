@@ -52,11 +52,11 @@ Outre le titre, trois boutons sont proposés à l'utilsateur.
 
 - Affiche la liste des prochains évènement avec leur catégorie, leur noms en anglais et en hébreu, ainsi que leur date.
 
-<img src="img_readme/liste_1.png" alt="liste évènement">   
+<img src="img_readme/list_1.png" alt="liste évènement">   
 
 ### Troisième activité
 
 - Affiche la liste des montées des lectures hebdomadaires.
 
-<img src="img_readme/liste_2.png" alt="liste montées">  
+<img src="img_readme/list_2.png" alt="liste montées">  
 
