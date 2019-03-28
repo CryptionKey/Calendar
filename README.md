@@ -35,6 +35,27 @@ Ce projet est le premier que nous réalisons sous Android Studio, il n'y avait d
 
 &nbsp;
 
+## Architecture du projet:
+
+### Model
+* Calendar
+* Leyning
+* RestCalendarResponse
+
+### View
+* MainActivity
+* SecondActivity
+* ThirdActivity
+
+### Controler
+* Cont
+* Cont_bis
+* MyAdapter
+* MyAdapter_bis
+* RestCalendarAPI
+
+&nbsp;
+
 ## Fonctionnalités: 
 
 ### Premier écran 
