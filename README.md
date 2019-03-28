@@ -47,17 +47,17 @@ Outre le titre, trois boutons sont proposés à l'utilsateur.
 
 ![Screenshot_20190326-134025](https://user-images.githubusercontent.com/45068328/55150091-b99d4680-514b-11e9-80ee-820984b51741.png)
 
-<img src="img_readme/splash.png" alt="ecran accueil">
+<img src="img_readme/ecran.png" alt="ecran accueil">
 
 ### Seconde activité
 
 - Affiche la liste des prochains évènement avec leur catégorie, leur noms en anglais et en hébreu, ainsi que leur date.
 
-<img src="img_readme/liste_pokemon.png" alt="liste évènement">   
+<img src="img_readme/liste_1.png" alt="liste évènement">   
 
 ### Troisième activité
 
 - Affiche la liste des montées des lectures hebdomadaires.
 
-<img src="img_readme/detail_pokemon.png" alt="liste montées">  
+<img src="img_readme/liste_2.png" alt="liste montées">  
 
