@@ -48,6 +48,5 @@ public class MainActivity extends AppCompatActivity {
         Toast mon_nom = Toast.makeText(this, "Daniel Elgrably",Toast.LENGTH_SHORT);
         mon_nom.show();
 
-        Animatoo.animateSpin(this);
     }
 }

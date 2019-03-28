@@ -1,5 +1,6 @@
 package com.example.calendar.Controler;
 
+import android.content.SharedPreferences;
 import android.util.Log;
 
 import com.example.calendar.Model.Calendar;
@@ -9,12 +10,15 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 import java.util.List;
+import java.util.Map;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
+
+import static android.content.Context.MODE_PRIVATE;
 
 public class Cont {
 

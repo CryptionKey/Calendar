@@ -50,7 +50,8 @@ public class ThirdActivity extends Activity {
         recyclerView.setLayoutManager(layoutManager);
         mAdapter = new MyAdapter_bis(list);
         recyclerView.setAdapter(mAdapter);
-        attachSwipeListener();
+
+        //attachSwipeListener();
     }
 
     private void attachSwipeListener() {
@@ -63,8 +64,10 @@ public class ThirdActivity extends Activity {
 
             @Override
             public void onSwiped(RecyclerView.ViewHolder viewHolder, int swipeDir) {
+
                 monteeList.remove(viewHolder.getAdapterPosition());
                 mAdapter.notifyItemRemoved(viewHolder.getAdapterPosition());
+
             }
         };
 

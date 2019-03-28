@@ -48,7 +48,7 @@ public class SecondActivity extends Activity {
         recyclerView.setLayoutManager(layoutManager);
         mAdapter = new MyAdapter(list);
         recyclerView.setAdapter(mAdapter);
-        attachSwipeListener();
+       // attachSwipeListener();
     }
 
     private void attachSwipeListener() {
