@@ -49,22 +49,13 @@ Outre le titre, trois boutons sont proposés à l'utilsateur.
 
 ### Seconde activité
 
-- Affiche la liste des pokémons avec une barre de recherche.
+- Affiche la liste des prochains évènement avec leur catégorie, leur noms en anglais et en hébreu, ainsi que leur date.
 
-<img src="img_readme/liste_pokemon.png" alt="liste pokemon">   <img src="img_readme/recherche.png" alt="recherche">
+<img src="img_readme/liste_pokemon.png" alt="liste pokemon">   
 
 ### Troisième activité
 
-- Affiche les différentes informations sur le pokémon 
-- Puces type, weaknesses, previous evolution et next evolution sont cliquables 
-- Redirection en fonction de la puce  :
-	- Type, weaknesses : Vers la liste des pokémons du type selectionné 
-	- Evolution : Vers le détail du pokémon selectionné
+- Affiche la liste des montées des lectures hebdomadaires.
 
-<img src="img_readme/detail_pokemon.png" alt="détail pokemon"> <img src="img_readme/detail_pokemon_2.png" alt="détail pokemon"> 
+<img src="img_readme/detail_pokemon.png" alt="détail pokemon">  
 
-### Filtres 
-
-Affichage obtenu avec la selection des types eau et plante
-
-<img src="img_readme/filtre_eau.png" alt="détail pokemon"> <img src="img_readme/filtre_plante.png" alt="détail pokemon"> 
