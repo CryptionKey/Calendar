@@ -47,13 +47,13 @@ Outre le titre, trois boutons sont proposés à l'utilsateur.
 
 <img src="img_readme/splash.png" alt="splash">
 
-### Ecran Home 
+### Seconde activité
 
 - Affiche la liste des pokémons avec une barre de recherche.
 
 <img src="img_readme/liste_pokemon.png" alt="liste pokemon">   <img src="img_readme/recherche.png" alt="recherche">
 
-### Ecran du détail du pokémon
+### Troisième activité
 
 - Affiche les différentes informations sur le pokémon 
 - Puces type, weaknesses, previous evolution et next evolution sont cliquables 
