@@ -13,6 +13,7 @@ import com.example.calendar.Model.Calendar;
 import com.example.calendar.Model.Leyning;
 import com.example.calendar.R;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -21,7 +22,7 @@ public class ThirdActivity extends Activity {
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
     private Cont_bis controlller;
-    private List<Leyning> monteeList;
+    private List<Leyning> monteeList = new ArrayList<>();
 
 
 
@@ -45,13 +46,13 @@ public class ThirdActivity extends Activity {
 
     public void showList(List<Calendar> list) {
         recyclerView.setHasFixedSize(true);
+        //monteeList = list;
         // use a linear layout manager
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
         mAdapter = new MyAdapter_bis(list);
         recyclerView.setAdapter(mAdapter);
-
-        //attachSwipeListener();
+        attachSwipeListener();
     }
 
     private void attachSwipeListener() {
@@ -64,14 +65,14 @@ public class ThirdActivity extends Activity {
 
             @Override
             public void onSwiped(RecyclerView.ViewHolder viewHolder, int swipeDir) {
-
                 monteeList.remove(viewHolder.getAdapterPosition());
                 mAdapter.notifyItemRemoved(viewHolder.getAdapterPosition());
-
             }
         };
 
         ItemTouchHelper itemTouchHelper = new ItemTouchHelper(simpleItemTouchCallback);
         itemTouchHelper.attachToRecyclerView(recyclerView);
     }
+
+
 }

@@ -12,6 +12,7 @@ import com.example.calendar.Model.Calendar;
 import com.example.calendar.Controler.MyAdapter;
 import com.example.calendar.R;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -20,7 +21,7 @@ public class SecondActivity extends Activity {
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
     private Cont controlller;
-    private List<Calendar> calendarList;
+    private List<Calendar> calendarList = new ArrayList<>();
 
 
     @Override
@@ -43,12 +44,13 @@ public class SecondActivity extends Activity {
 
     public void showList(List<Calendar> list) {
         recyclerView.setHasFixedSize(true);
+        calendarList = list;
         // use a linear layout manager
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
-        mAdapter = new MyAdapter(list);
+        mAdapter = new MyAdapter(calendarList);
         recyclerView.setAdapter(mAdapter);
-       // attachSwipeListener();
+        attachSwipeListener();
     }
 
     private void attachSwipeListener() {

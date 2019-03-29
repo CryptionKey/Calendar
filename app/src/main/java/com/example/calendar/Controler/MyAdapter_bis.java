@@ -111,7 +111,16 @@ public class MyAdapter_bis extends RecyclerView.Adapter<MyAdapter_bis.ViewHolder
         }
         else{
             holder.line_1.setText("Pas de lecture prévue");
-        }
+            holder.line_2.setText("");
+            holder.line_3.setText("");
+            holder.line_4.setText("");
+            holder.line_5.setText("");
+            holder.line_6.setText("");
+            holder.line_7.setText("");
+            holder.line_8.setText("");
+            holder.line_9.setText("");
+            holder.line_10.setText("");
+                    }
     }
 
     // Return the size of your dataset (invoked by the layout manager)
