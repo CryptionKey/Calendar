@@ -31,6 +31,9 @@ Ce projet est le premier que nous réalisons sous Android Studio, il n'y avait d
 - Appels WebService à une API Rest
 - Architecture MVC
 - Animation entre deux écrans
+- Autres fonctionnalités 
+  - Changement logo de l'application 
+  - Supression élèment par swip
 
 
 &nbsp;
