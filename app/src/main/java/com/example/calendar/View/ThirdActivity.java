@@ -22,7 +22,7 @@ public class ThirdActivity extends Activity {
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
     private Cont_bis controlller;
-    private List<Leyning> monteeList = new ArrayList<>();
+    private List<Calendar> calendarList = new ArrayList<>();
 
 
 
@@ -46,7 +46,7 @@ public class ThirdActivity extends Activity {
 
     public void showList(List<Calendar> list) {
         recyclerView.setHasFixedSize(true);
-        //monteeList = list;
+        calendarList = list;
         // use a linear layout manager
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
@@ -65,7 +65,7 @@ public class ThirdActivity extends Activity {
 
             @Override
             public void onSwiped(RecyclerView.ViewHolder viewHolder, int swipeDir) {
-                monteeList.remove(viewHolder.getAdapterPosition());
+                calendarList.remove(viewHolder.getAdapterPosition());
                 mAdapter.notifyItemRemoved(viewHolder.getAdapterPosition());
             }
         };
