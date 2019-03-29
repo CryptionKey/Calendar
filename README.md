@@ -34,6 +34,7 @@ Ce projet est le premier que nous réalisons sous Android Studio, il n'y avait d
 - Autres fonctionnalités 
   - Changement logo de l'application 
   - Supression élèment par swip
+  - Toast message
 
 
 &nbsp;
