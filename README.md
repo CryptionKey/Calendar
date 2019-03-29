@@ -31,7 +31,31 @@ Ce projet est le premier que nous réalisons sous Android Studio, il n'y avait d
 - Appels WebService à une API Rest
 - Architecture MVC
 - Animation entre deux écrans
+- Autres fonctionnalités 
+  - Changement logo de l'application 
+  - Supression élèment par swip
 
+
+&nbsp;
+
+## Architecture du projet:
+
+### Model
+* Calendar : -------------->*Objet contenant les informations récupérées de l'API*
+* Leyning : --------------->*Objet dans calendar contenant les montées et lectures*
+* RestCalendarResponse
+
+### View
+* MainActivity : ----------->*Pour l'écran d'accueil, avec les fonctions appelées pour les trois boutons*
+* SecondActivity : -------->*Affichage du calendrier* 
+* ThirdActivity : ---------->*Affichage des montées et lectures*
+
+### Controler
+* Cont : -------------------->*Constructeur pour la SecondActivity*
+* Cont_bis : ---------------->*Constructeur pour la ThirdActivity*
+* MyAdapter : ------------->*Adapteur pour la SecondActivity*
+* MyAdapter_bis:----------->*Adapteur pour la ThirdActivity*
+* RestCalendarAPI
 
 &nbsp;
 
@@ -45,19 +69,18 @@ Outre le titre, trois boutons sont proposés à l'utilsateur.
 - Le second, "Montées chabbat" ouvre une troisième activité affichant la répartition des montées pour la lecture de chabat.
 - Le troisième, "Créateur" affiche un toast avec mon nom.
 
-![Screenshot_20190326-134025](https://user-images.githubusercontent.com/45068328/55150091-b99d4680-514b-11e9-80ee-820984b51741.png)
 
-<img src="img_readme/ecran.png" alt="ecran accueil">
+<img src="img_readme/ecran.png" width="200" alt="ecran accueil">
 
 ### Seconde activité
 
 - Affiche la liste des prochains évènement avec leur catégorie, leur noms en anglais et en hébreu, ainsi que leur date.
 
-<img src="img_readme/liste_1.png" alt="liste évènement">   
+<img src="img_readme/list_1.png" width="200" alt="liste évènement">   
 
 ### Troisième activité
 
 - Affiche la liste des montées des lectures hebdomadaires.
 
-<img src="img_readme/liste_2.png" alt="liste montées">  
+<img src="img_readme/list_2.png" width="200" alt="liste montées">  
 
